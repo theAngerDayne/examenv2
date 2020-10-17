@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\oracledb\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\oracledb\\.nuget\\packages"
+    ]
+  }
+}
