@@ -19,7 +19,7 @@ namespace API.Controllers
         public async Task<IActionResult> Register(UserRegisterDto request)
         {
             ServiceResponse<int> response = await _authRepo.Register(
-                new User { Username = request.Username }, request.Password
+                new User { Username = request.Email }, request.Password
             );
             if (!response.Success)
             {
@@ -32,7 +32,7 @@ namespace API.Controllers
         public async Task<IActionResult> Login(UserLoginDto request)
         {
             ServiceResponse<string> response = await _authRepo.Login(
-                request.Username, request.Password
+                request.Email, request.Password
             );
             if (!response.Success)
             {
